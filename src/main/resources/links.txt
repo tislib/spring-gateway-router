@@ -1,0 +1,97 @@
+0 http://api.emass.tisserv.net/application/api/1.0/applications
+0 http://api.emass.tisserv.net/application/api/1.0/applications/{id}
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/changes
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/changes/by-cnt-id
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/changes/{id}
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/contracts
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/contracts/by-tin/{tin}
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/contracts/{tin}//reverse-filter/3
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/contracts/{tin}/{pin}
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/contracts{id}
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/employees/by-tin/{tin}
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/orders
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/orders/by-tin/{tin}
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/orders/types
+0 http://api.emass.tisserv.net/contract/api/1.0/employer/orders/{tin}/{pin}
+0 http://api.emass.tisserv.net/contract/api/1.0/ministry/contracts
+0 http://api.emass.tisserv.net/contract/api/1.0/ministry/orders
+0 http://api.emass.tisserv.net/contract/api/1.0/person/contracts
+0 http://api.emass.tisserv.net/employer/api/1.0/employer/{tin}
+0 http://api.emass.tisserv.net/employer/api/1.0/employers/{tin}/positions
+0 http://api.emass.tisserv.net/employer/api/1.0/employers/{tin}/positions/{id}
+0 http://api.emass.tisserv.net/forwarding/api/1.0/employer/forwards/by-tin/{tin}
+0 http://api.emass.tisserv.net/forwarding/api/1.0/employer/forwards/{id}
+0 http://api.emass.tisserv.net/forwarding/api/1.0/employer/forwards/{id}/interview
+0 http://api.emass.tisserv.net/forwarding/api/1.0/person/forwards/by-app-id/{id}
+0 http://api.emass.tisserv.net/forwarding/api/1.0/person/forwards/{id}
+0 http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/relatives
+0 http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/relatives/{id}
+? http://api.emass.tisserv.net/application/api/1.0/applications/{pin}
+? http://api.emass.tisserv.net/employer/api/1.0/employers/person/{tin}
+? http://api.emass.tisserv.net/employer/api/1.0/employers/{id}
+? http://api.emass.tisserv.net/forwarding/api/1.0/employer/forwards/employers/{tin}/structures
+? http://api.emass.tisserv.net/person/api/1.0/persons/{fin}
+? http://api.emass.tisserv.net/person/api/1.0/persons/{fin}/educations
+? http://api.emass.tisserv.net/person/api/1.0/persons/{id}
+? http://api.emass.tisserv.net/person/api/1.0/persons/{key}
+? http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/{key}
+? http://api.emass.tisserv.net/person/api/1.0/persons{fin}
+? http://api.emass.tisserv.net/person/api/1.0/persons{fin}/educations
+? http://api.emass.tisserv.net/person/api/1.0/persons{pin}
+http://api.emas.tisserv.net/person/api/1.0/persons/skills
+http://api.emass.tisserv.net/application/api/1.0/applications/{id}/application-status
+http://api.emass.tisserv.net/application/api/1.0/cancel-reasons
+http://api.emass.tisserv.net/common/api/1.0/cont-trm-reasons
+http://api.emass.tisserv.net/common/api/1.0/term-cont-reasons
+http://api.emass.tisserv.net/contract/api/1.0/employer/contracts/{id}/termination
+http://api.emass.tisserv.net/employer/api/1.0/employers
+http://api.emass.tisserv.net/employer/api/1.0/employers/job-classifications
+http://api.emass.tisserv.net/employer/api/1.0/employers/{tin}
+http://api.emass.tisserv.net/employer/api/1.0/employers/{tin}/structures
+http://api.emass.tisserv.net/employer/api/1.0/employers/{tin}/work-areas
+http://api.emass.tisserv.net/employer/api/1.0/job-classifications
+http://api.emass.tisserv.net/employer/api/1.0/regions
+http://api.emass.tisserv.net/employer/api/1.0/regions/{id}
+http://api.emass.tisserv.net/employer/api/1.0/work-areas
+http://api.emass.tisserv.net/employer/api/1.0/work-areas/{id}
+http://api.emass.tisserv.net/employer/api/1.0/{tin}/certs/
+http://api.emass.tisserv.net/employer/api/1.0/{tin}/certs/{id}
+http://api.emass.tisserv.net/employer/api/1.0/{tin}/licenses
+http://api.emass.tisserv.net/employer/api/1.0/{tin}/licenses/{id}
+http://api.emass.tisserv.net/employer/api/1.0/{tin}/products
+http://api.emass.tisserv.net/employer/api/1.0/{tin}/products/{id}
+http://api.emass.tisserv.net/employer/api/1.0/{tin}/regulations
+http://api.emass.tisserv.net/employer/api/1.0/{tin}/regulations/{id}
+http://api.emass.tisserv.net/forwarding/api/1.0/employer/cancel-reasons/by-type/FORWARD
+http://api.emass.tisserv.net/forwarding/api/1.0/person/cancel-reasons/by-type/{type}
+http://api.emass.tisserv.net/forwarding/api/1.0/person/forwards/batch-create
+http://api.emass.tisserv.net/forwarding/api/1.0/person/forwards/{id}/interview/person-attitude
+http://api.emass.tisserv.net/iep/api/1.0/answers
+http://api.emass.tisserv.net/iep/api/1.0/answers/{pin}
+http://api.emass.tisserv.net/iep/api/1.0/questions
+http://api.emass.tisserv.net/person/api/1.0/persons/skills
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/awards
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/driving-license
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/educations
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/educations/{id}
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/employee-status-logs
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/land-properties
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/passport
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/phones
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/phones/{id}
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/physical-entrepreneur-data
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/recommenders
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/scientific-names
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/skills
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/skills/{id}
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/special-social-status
+http://api.emass.tisserv.net/person/api/1.0/persons/{pin}/targeted-social-assistances
+http://api.emass.tisserv.net/person/faculties
+http://api.emass.tisserv.net/person/institutions
+http://api.emass.tisserv.net/person/specialties
+http://api.emass.tisserv.net/vacancy/api/1.0/employer/vacancies/by-tin/{tin}
+http://api.emass.tisserv.net/vacancy/api/1.0/ministry/vacancies
+http://api.emass.tisserv.net/vacancy/api/1.0/ministry/vacancies/{id}
+http://api.emass.tisserv.net/vacancy/api/1.0/person/vacancies/by-pin/{pin}
+http://api.emass.tisserv.net/vacancy/api/1.0/person/vacancies/{id}

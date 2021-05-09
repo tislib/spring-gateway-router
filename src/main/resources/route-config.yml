@@ -1,0 +1,62 @@
+mappings:
+  - route: /api/1.0/cancel-reasons
+    method: GET
+    grants:
+      - read_application
+      - list_application
+    handler:
+      name: proxy-handler
+      destination: '{common-service}/api/1.0/cancel-reasons'
+  - route: /api/1.0/term-cont-reasons
+    method: GET
+    grants:
+      - read_term-cont-reasons
+      - list_term-cont-reasons
+    handler:
+      name: proxy-handler
+      destination: '{application-service}/api/1.0/term-cont-reasons'
+  - route: /api/1.0/applications/{id}
+    method: GET
+    grants:
+      - read_term-cont-reasons
+      - list_term-cont-reasons
+    handler:
+      name: proxy-handler
+      destination: '{application-service}/api/1.0/applications/{url.id}'
+  - route: /api/1.0/applications/{id}
+    method: PUT
+    grants:
+      - read_term-cont-reasons
+      - list_term-cont-reasons
+    handler:
+      name: proxy-handler
+      destination: '{application-service}/api/1.0/applications/{url.id}'
+  - route: /api/1.0/applications
+    method: GET
+    grants:
+      - read_application
+      - list_applications
+    handler:
+      name: merge-flat-map-handler
+      recordsPath: 'content'
+      mappings:
+        - key: fin
+          path: pin
+      mainDestination:
+        destination: '{application-service}/api/1.0/applications'
+      mapDestination:
+        destination: '{person-service}/api/1.0/persons/{fin}'
+        wrapper: person
+  - route: /api/1.0/persons/{fin}
+    method: GET
+    grants:
+      - read_person
+      - list_person
+    handler:
+      name: merge-combine-handler
+      destinations:
+        - destination: '{person-service}/api/1.0/persons/{url.fin}'
+          wrapper: person
+        - destination: '{person-service}/api/1.0/persons/{url.fin}/educations'
+          wrapper: education
+
